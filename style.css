@@ -1,0 +1,170 @@
+/*====================================================*/
+/* fonts */
+/*====================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@700&family=Lexend+Deca&display=swap');
+
+/*====================================================*/
+/* root values */
+/*====================================================*/
+:root {
+    --first-clr: hsl(31, 77%, 52%);
+    --second-clr: hsl(184, 100%, 22%);
+    --third-clr: hsl(179, 100%, 13%);
+    --paragraph-clr: hsla(0, 0%, 100%, 0.75);
+    --heading-clr: hsl(0, 0%, 95%);
+    --body-font-size: 15px;
+    --fnt-fml: Big Shoulders Display, cursive;
+    --fnt-fml-para: Lexend Deca;
+    --pad-img-size: 50px 50px 20px 50px;
+    --sec-ht: 35rem;
+
+
+}
+
+/*====================================================*/
+/* the container */
+/*====================================================*/
+.container {
+    display: block;             /* mobile-first display */
+    margin: 1rem;
+    overflow: hidden;           /* the div was overlapping*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media (min-width: 88em) {
+    .container {
+        display: flex;
+        gap: 0;
+        margin: auto;
+        margin-top: 10rem;
+        padding: 1rem;
+        height: var(--sec-ht);
+        width: 60%;
+    }
+
+    .or-sedan {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .cy-luxury {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+
+}
+
+/* =================================================== */
+/* sedan suction */
+/* =================================================== */
+.or-sedan {
+    background-color: var(--first-clr);
+    height: var(--sec-ht);
+}
+
+.img-sedan {
+    padding: var(--pad-img-size)
+}
+
+
+/* =================================================== */
+/* suv section */
+/* =================================================== */
+.cy-suv {
+    background-color: var(--second-clr);
+    height: var(--sec-ht);
+}
+
+.img-suv {
+    padding: var(--pad-img-size)
+}
+
+
+/* =================================================== */
+/* luxury section */
+/* =================================================== */
+.cy-luxury {
+    background-color: var(--third-clr);
+    height: var(--sec-ht);
+}
+
+.img-luxury {
+    padding: var(--pad-img-size)
+}
+
+/* ===================================================*/
+/*Topography values*/
+/* ===================================================*/
+h1 {
+    font-family: var(--fnt-fml);
+    color: var(--heading-clr);
+    padding: 0px 50px 2px 50px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: var(--fnt-fml-para);
+    color: var(--paragraph-clr);
+    padding: 0px 50px 2px 50px;
+}
+
+/*====================================================*/
+/* Button Styles*/
+/*====================================================*/
+
+.btn-sedan, .btn-suv, .btn-luxury {
+    margin: 50px 50px 20px 50px;
+    border-radius: 30px;
+    background-color: white;
+    border-color: white;
+    padding: 10px 30px 10px 30px;
+    font-size: 1.2rem;
+    font-family: var(--fnt-fml-para);
+    position: relative;
+    top: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition-duration: 0.5ms;
+    
+}
+
+.btn-sedan {
+    color: var(--first-clr);
+}
+
+.btn-suv {
+    color: var(--second-clr);
+}
+
+.btn-luxury {
+    color: var(--third-clr);
+}
+
+.btn-sedan:hover, .btn-suv:hover, .btn-luxury:hover {
+    background-color: transparent;
+    color: var(--paragraph-clr);
+}
+
+/* =================================================== */
+/* anchor texts styles */
+/* =================================================== */
+
+#fr, #cd {
+    text-align: center;
+    color: black;
+    position: relative;
+    bottom: 2px;
+    top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(170, 108, 228);
+
+}
